@@ -1,62 +1,101 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: Hackathon Submission
+description: Add a hackathon submission
+title: "[Project]: "
+labels: ["submission", "needreview"]
 assignees:
-  - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for participating in the hackathon and creating your submission!
   - type: input
-    id: contact
+    id: name
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Name
+      description: Enter your full name
+      placeholder: Aditya Oberai
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: Enter your email address
+      placeholder: foo@bar.com
+    validations:
+      required: true
+  - type: input
+    id: team-emails
+    attributes:
+      label: Email Addresses of Team Members
+      description: Enter the email addresses of you team members separated by commas (if you have any)
+      placeholder: foo1@bar.com, foo2@bar.com, foo3@bar.com,...
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Project Description
+      description: What have you built during the hackathon?
+      placeholder: The project I created is...
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: inspiration
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Inspiration behind the Project
+      description: What is the story behind this project? Why did you choose to work on this specific idea?
+      placeholder: The reason I chose this idea/project was...
+    validations:
+      required: true
+  - type: textarea
+    id: tech-stack
+    attributes:
+      label: Tech Stack
+      description: How have you built this project? Mention the technologies/methods/platforms you used to build your project
+      placeholder: The technologies I used...
+    validations:
+      required: true
+  - type: dropdown
+    id: track
+    attributes:
+      label: Hackathon Track
+      description: What hackathon track are you opting in?
+      options:
+        - Track 1
+        - Track 2
+        - Track 3
+        - Track 4
+    validations:
+      required: true
+  - type: input
+    id: project-link
+    attributes:
+      label: Project Repo
+      description: Share a public repo link of your project
+      placeholder: e.g.: https://github.com/code-capture/CodeCapture-Xamarin
+    validations:
+      required: true
+  - type: input
+    id: demo-link
+    attributes:
+      label: Demo Video/Photos
+      description: Share a publicly visible demo video/photos link of your project
+      placeholder: e.g.: https://www.youtube.com/watch?v=9IBaX1avYWc
+    validations:
+      required: false
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything Else?
+      description: Any other feedback, queries or information, you would like to share with us?
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../../CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true
