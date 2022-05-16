@@ -2,7 +2,6 @@ name: Hackathon Submission
 description: Add a hackathon submission
 title: "[Project]: "
 labels: ["submission", "needreview"]
-assignees:
 body:
   - type: markdown
     attributes:
