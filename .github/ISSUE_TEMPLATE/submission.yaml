@@ -72,7 +72,7 @@ body:
     attributes:
       label: Project Repo
       description: Share a public repo link of your project
-      placeholder: e.g. https://github.com/code-capture/CodeCapture-Xamarin
+      placeholder: https://github.com/code-capture/CodeCapture-Xamarin
     validations:
       required: true
   - type: input
@@ -80,7 +80,7 @@ body:
     attributes:
       label: Demo Video/Photos
       description: Share a publicly visible demo video/photos link of your project
-      placeholder: e.g. https://www.youtube.com/watch?v=9IBaX1avYWc
+      placeholder: https://www.youtube.com/watch?v=9IBaX1avYWc
     validations:
       required: false
   - type: textarea
@@ -89,7 +89,7 @@ body:
       label: Anything Else?
       description: Any other feedback, queries or information, you would like to share with us?
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: terms
     attributes:
