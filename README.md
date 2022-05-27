@@ -6,12 +6,17 @@ Here's a template repo for you to generate a submission platform for your hackat
 ## Steps To Use This Repo 
 
 
-* Click on **Use this template** to generate a copy of the repository for your hackathon.
-<img width="939" alt="image" src="https://user-images.githubusercontent.com/31401437/170704393-0d41e85e-acf4-488d-9191-49da1cda3b34.png">
+* Click on [**Use this template**](https://github.com/adityaoberai/hackathon-submissions-repo-template/generate) to generate a copy of the repository for your hackathon.
+<a href="https://github.com/adityaoberai/hackathon-submissions-repo-template/generate" target="_blank">
+  <img width="94" alt="image" src="https://user-images.githubusercontent.com/31401437/170708931-be980535-a6fe-4540-a8d1-9515059f5d9c.png">
+</a>
 
-* Visit the [Issue Form for Hackathon Submissions](.github/ISSUE_TEMPLATE/submission.yaml) and edit it to your comfort. Here's the [guide for creating and editing issue forms on GitHub](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms).
+* Visit the [Issue Form for Hackathon Submissions](.github/ISSUE_TEMPLATE/submission.yaml) and edit it to your comfort. [*(Guide)*](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)
 
-*Note: In order to use the Hackathon Submissions Issue Form, your repository must be public.*
+> *Note: In order to use the Hackathon Submissions Issue Form, your repository must be public.*
+
+* Add new **Issue Labels** (and remove the existing ones) so that the list looks as follows. [*(Guide)*](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+<img width="921" alt="image" src="https://user-images.githubusercontent.com/31401437/170709980-6b54a747-789c-41a5-9ed0-f398bbb767b9.png">
 
 * Edit the **Example Hackathon Description** to add all the necessary details regarding your hackathon.
 
