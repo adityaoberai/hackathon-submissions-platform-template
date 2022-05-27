@@ -18,11 +18,11 @@ Here's a template repo for you to generate a submission platform for your hackat
 * Add new **Issue Labels** (and remove the existing ones) so that the list looks as follows. [*(Guide)*](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
 <img width="921" alt="image" src="https://user-images.githubusercontent.com/31401437/170709980-6b54a747-789c-41a5-9ed0-f398bbb767b9.png">
 
-* Edit the **Example Hackathon Description** to add all the necessary details regarding your hackathon.
+* Edit the **Example Hackathon Description** to add/update all the necessary details regarding your hackathon.
 
-* Edit the [Code of Conduct](CODE_OF_CONDUCT.md) to add details to the organizers and the hackathon.
+* Edit the [Code of Conduct](CODE_OF_CONDUCT.md) to add details of the organizers and the hackathon.
 
-* Review (and update) the [Rules](RULES.md) to have your own set of rules for the hackathon.
+* Review (and update) the [Rules](RULES.md) to add your own set of rules for the hackathon.
 
 * Remove the contents of the Readme before the hackathon description.
 
@@ -76,6 +76,25 @@ Learn new technologies, enhance your team management and presentation skills, an
 
 >* Cash worth $100
 >* XYZ Hackathon Swags
+
+## Judging Parameters
+
+1. Project Completeness and Functionality *(25%)*
+
+> * Does the project stand as an individual end-to-end product?
+> * Is it a functioning solution that can scale in the real world?
+
+2. Creativity in Design *(25%)*
+
+> * Does the project bring innovations in design and create comfortable user experiences?
+
+3. Innovation in Idea *(25%)*
+
+> * Does the project attempt to solve a previously unsolved problem?
+
+4. Social Impact *(25%)*
+
+> * Does the project have an impact on people's lives at a social level?
 
 ## How To Submit Your Project?
 
