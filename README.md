@@ -108,6 +108,10 @@ Follow the steps to submit your project in the hackathon:
 
 * **Enter your submission details and you're good to go!**
 
+### Video Tutorial - How To Submit Your Project?
+
+https://user-images.githubusercontent.com/31401437/170713948-5bfe0c35-e1aa-4eeb-8456-fbb02aeb9292.mp4
+
 ## Rules and Code of Conduct
 
 All participants must agree to the [Rules](RULES.md) and [Code of Conduct](CODE_OF_CONDUCT.md) to participate in the Hackathon.
