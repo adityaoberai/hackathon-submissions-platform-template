@@ -45,12 +45,11 @@ import csv
 import requests
 import json
 
-GITHUB_USER = 'USERNAME' # Add your username
-GITHUB_PASSWORD = 'PASSWORD' # Add your password
 REPO = 'REPO NAME'  # format is username/repo
 ISSUES_FOR_REPO_URL = 'https://api.github.com/repos/%s/issues' % REPO
-AUTH = (GITHUB_USER, GITHUB_PASSWORD)
 arg="?state=all"
+
+# Since the hackathon repos must be public (to allow issue forms), username and password are not necessary.
 
 def write_issues(r):
     "output a list of issues to csv"
