@@ -2,6 +2,20 @@
 
 Here's a template repo for you to generate a submission platform for your hackathon for free on a GitHub.
 
+## Table Of Contents
+
+- [Hackathon Submissions Platform Template](#hackathon-submissions-platform-template)
+  * [Steps To Use This Repo](#steps-to-use-this-repo)
+  * [Exporting Submission Links](#exporting-submission-links)
+- [XYZ Hackathon: Example Hackathon Description](#xyz-hackathon-example-hackathon-description)
+  * [About The Hackathon](#about-the-hackathon)
+  * [Timeline](#timeline)
+  * [Tracks](#tracks)
+  * [Prizes](#prizes)
+  * [Judging Parameters](#judging-parameters)
+  * [How To Submit Your Project?](#how-to-submit-your-project)
+    + [Video Tutorial - How To Submit Your Project?](video-tutorial---how-to-submit-your-project)
+  * [Rules and Code of Conduct](#rules-and-code-of-conduct)
 
 ## Steps To Use This Repo 
 
