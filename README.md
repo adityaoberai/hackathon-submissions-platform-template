@@ -44,7 +44,7 @@ Here's a template repo for you to generate a submission platform for your hackat
 
 If you want export all submission links to a CSV file, follow the following steps:
 
-* Install `Python 2.7` and `pip` on your system.
+* Install `Python 3.x` on your system.
 
 * Create a folder to store your submissions CSV.
 
