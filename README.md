@@ -59,7 +59,7 @@ import csv
 import requests
 import json
 
-REPO = "adityaoberai/hackathon-submissions-platform-template"  # format is username/repo
+REPO = ""  # format is username/repo
 ISSUES_FOR_REPO_URL = "https://api.github.com/repos/%s/issues" % REPO
 arg = "?state=all"
 
