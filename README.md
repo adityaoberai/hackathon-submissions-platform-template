@@ -80,7 +80,7 @@ def write_issues(r):
             csvout.writerow(
                 [
                     issue["number"],
-                    issue["title"].encode("utf-8"),
+                    issue["title"],
                     Tag,
                     issue["state"],
                     issue["created_at"],
