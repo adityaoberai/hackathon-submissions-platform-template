@@ -52,7 +52,7 @@ If you want export all submission links to a CSV file, follow the following step
 
 ```python
 """
-Based on the script by prateek032: https://gist.github.com/prateek032/06273e179bb034800c61
+Inspired by script the created by prateek032: https://gist.github.com/prateek032/06273e179bb034800c61
 """
 
 import csv
@@ -94,7 +94,7 @@ r = requests.get(ISSUES_FOR_REPO_URL + arg)
 csvfile = "%s-issues.csv" % (REPO.replace("/", "-"))
 csvfileo = open(csvfile, "w")
 csvout = csv.writer(csvfileo)
-csvout.writerow(["id", "Title", "Tag", "State", "Open Date", "URL"])
+csvout.writerow(["Id", "Title", "Tag", "State", "Open Date", "URL"])
 
 write_issues(r)
 
