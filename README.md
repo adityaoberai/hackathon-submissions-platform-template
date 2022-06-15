@@ -44,7 +44,7 @@ Here's a template repo for you to generate a submission platform for your hackat
 
 If you want export all submission links to a CSV file, follow the following steps:
 
-* Install `Python 2.7` and `pip` on your system.
+* Install `Python 3.x` on your system.
 
 * Create a folder to store your submissions CSV.
 
@@ -59,50 +59,67 @@ import csv
 import requests
 import json
 
-REPO = 'REPO NAME'  # format is username/repo
-ISSUES_FOR_REPO_URL = 'https://api.github.com/repos/%s/issues' % REPO
-arg="?state=all"
+REPO = ""  # format is username/repo
+ISSUES_FOR_REPO_URL = "https://api.github.com/repos/%s/issues" % REPO
+arg = "?state=all"
 
 # Since the hackathon repos must be public (to allow issue forms), username and password are not necessary.
+
 
 def write_issues(r):
     "output a list of issues to csv"
     if not r.status_code == 200:
         raise Exception(r.status_code)
     for issue in r.json():
-        Tag=[]
-        labels = issue['labels']
+        Tag = []
+        labels = issue["labels"]
         for label in labels:
-            Tag.append(label['name'])
+            Tag.append(label["name"])
 
-        if 'issues' in issue['html_url']:
-            csvout.writerow([issue['number'], issue['title'].encode('utf-8'),Tag,issue['state'] ,issue['created_at'], issue['html_url']])
+        if "issues" in issue["html_url"]:
+            csvout.writerow(
+                [
+                    issue["number"],
+                    issue["title"],
+                    Tag,
+                    issue["state"],
+                    issue["created_at"],
+                    issue["html_url"],
+                ]
+            )
 
-r = requests.get(ISSUES_FOR_REPO_URL+arg)
 
-csvfile = '%s-issues.csv' % (REPO.replace('/', '-'))
-csvfileo=open(csvfile, 'wb')
+r = requests.get(ISSUES_FOR_REPO_URL + arg)
+
+csvfile = "%s-issues.csv" % (REPO.replace("/", "-"))
+csvfileo = open(csvfile, "w")
 csvout = csv.writer(csvfileo)
-csvout.writerow(('id', 'Title','Tag','State','Open Date', 'URL'))
+csvout.writerow(["id", "Title", "Tag", "State", "Open Date", "URL"])
 
 write_issues(r)
 
-#more pages? examine the 'link' header returned
-if 'link' in r.headers:
+# more pages? examine the "link" header returned
+if "link" in r.headers:
     pages = dict(
-        [(rel[6:-1], url[url.index('<')+1:-1]) for url, rel in
-            [link.split(';') for link in
-                r.headers['link'].split(',')]])
+        [
+            (rel[6:-1], url[url.index("<") + 1 : -1])
+            for url, rel in [link.split(";") for link in r.headers["link"].split(",")]
+        ]
+    )
 
-    while 'last' in pages and 'next' in pages:
-        r = requests.get(pages['next'], auth=AUTH)
+    while "last" in pages and "next" in pages:
+        r = requests.get(pages["next"], auth=AUTH)
         write_issues(r)
-        if pages['next'] == pages['last']:
+        if pages["next"] == pages["last"]:
             break
         pages = dict(
-        [(rel[6:-1], url[url.index('<')+1:-1]) for url, rel in
-            [link.split(';') for link in
-                r.headers['link'].split(',')]])
+            [
+                (rel[6:-1], url[url.index("<") + 1 : -1])
+                for url, rel in [
+                    link.split(";") for link in r.headers["link"].split(",")
+                ]
+            ]
+        )
 
 csvfileo.close()
 ```
