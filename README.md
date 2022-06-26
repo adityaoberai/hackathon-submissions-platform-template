@@ -1,6 +1,6 @@
 # Hackathon Submissions Platform Template
 
-Here's a template repo for you to generate a submission platform for your hackathon for free on a GitHub.
+Here's a template repo for you to generate a submission platform for your hackathon for free on GitHub.
 
 ## Table Of Contents
 
