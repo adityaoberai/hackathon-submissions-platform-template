@@ -12,7 +12,7 @@ body:
     attributes:
       label: Name
       description: Enter your full name
-      placeholder: Aditya Oberai
+      placeholder: Arvind Lavania
     validations:
       required: true
   - type: input
